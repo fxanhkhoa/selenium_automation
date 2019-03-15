@@ -39,6 +39,8 @@ def get_captcha(driver, element, path):
     image = image.convert("RGB")
     image.save(path, 'png')  # saves new cropped image
 
+    image.show()
+
     # box = (int(left), int(top), int(right), int(bottom))
     # screenshot = driver.get_screenshot_as_base64()
     # img = Image.open(StringIO(base64.b64decode(screenshot)))

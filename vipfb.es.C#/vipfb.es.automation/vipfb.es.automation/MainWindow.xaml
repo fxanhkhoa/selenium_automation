@@ -1,0 +1,26 @@
+﻿<Window x:Class="vipfb.es.automation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vipfb.es.automation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <Image x:Name="captchaImg" HorizontalAlignment="Left" Height="88" Margin="10,10,0,0" VerticalAlignment="Top" Width="182"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="26,133,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
+        <Button x:Name="stopBtn" Content="Stop" HorizontalAlignment="Left" Margin="26,157,0,0" VerticalAlignment="Top" Width="75" Click="StopBtn_Click"/>
+        <TextBox x:Name="x" HorizontalAlignment="Left" Height="22" Margin="151,216,0,0" TextWrapping="Wrap" Text="167" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="y" HorizontalAlignment="Left" Height="23" Margin="151,243,0,0" TextWrapping="Wrap" Text="657" VerticalAlignment="Top" Width="59"/>
+        <ListBox x:Name="tokenList" HorizontalAlignment="Left" Height="215" Margin="324,23,0,0" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Height="23" Margin="90,271,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,267,0,0"/>
+        <TextBox x:Name="clientTokenBox" HorizontalAlignment="Left" Height="23" Margin="90,299,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ClientToken" HorizontalAlignment="Left" Margin="-1,295,0,0" VerticalAlignment="Top"/>
+        <Label Content="Coordinate X" HorizontalAlignment="Left" Margin="0,220,0,0" VerticalAlignment="Top"/>
+        <Label Content="Coordinate Y" HorizontalAlignment="Left" Margin="0,243,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" Margin="151,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Result" HorizontalAlignment="Left" Margin="151,122,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
