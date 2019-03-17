@@ -7,20 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <Image x:Name="captchaImg" HorizontalAlignment="Left" Height="88" Margin="10,10,0,0" VerticalAlignment="Top" Width="182"/>
-        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="26,133,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
-        <Button x:Name="stopBtn" Content="Stop" HorizontalAlignment="Left" Margin="26,157,0,0" VerticalAlignment="Top" Width="75" Click="StopBtn_Click"/>
-        <TextBox x:Name="x" HorizontalAlignment="Left" Height="22" Margin="151,216,0,0" TextWrapping="Wrap" Text="167" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="y" HorizontalAlignment="Left" Height="23" Margin="151,243,0,0" TextWrapping="Wrap" Text="657" VerticalAlignment="Top" Width="59"/>
-        <ListBox x:Name="tokenList" HorizontalAlignment="Left" Height="215" Margin="324,23,0,0" VerticalAlignment="Top" Width="155"/>
-        <TextBox x:Name="idBox" HorizontalAlignment="Left" Height="23" Margin="90,271,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="captchaImg" HorizontalAlignment="Left" Height="88" Margin="10,10,0,0" VerticalAlignment="Top" Width="183"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="118,341,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
+        <Button x:Name="stopBtn" Content="Stop" HorizontalAlignment="Left" Margin="118,365,0,0" VerticalAlignment="Top" Width="75" Click="StopBtn_Click"/>
+        <TextBox x:Name="x" HorizontalAlignment="Left" Height="22" Margin="90,216,0,0" TextWrapping="Wrap" Text="167" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="y" HorizontalAlignment="Left" Height="23" Margin="90,243,0,0" TextWrapping="Wrap" Text="657" VerticalAlignment="Top" Width="59"/>
+        <ListBox x:Name="tokenList" HorizontalAlignment="Left" Height="215" Margin="398,23,0,0" VerticalAlignment="Top" Width="386"/>
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Height="23" Margin="90,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,267,0,0"/>
-        <TextBox x:Name="clientTokenBox" HorizontalAlignment="Left" Height="23" Margin="90,299,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="clientTokenBox" HorizontalAlignment="Left" Height="23" Margin="90,299,0,0" TextWrapping="Wrap" Text="c1ac19737af63c7a05d485384356dbc9" VerticalAlignment="Top" Width="254"/>
         <Label Content="ClientToken" HorizontalAlignment="Left" Margin="-1,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Coordinate X" HorizontalAlignment="Left" Margin="0,220,0,0" VerticalAlignment="Top"/>
         <Label Content="Coordinate Y" HorizontalAlignment="Left" Margin="0,243,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" Margin="151,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Result" HorizontalAlignment="Left" Margin="151,122,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" Margin="30,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Result" HorizontalAlignment="Left" Margin="29,103,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="testBtn" Content="Test" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top" Width="75" Click="TestBtn_Click"/>
+        <TextBox x:Name="inputTokenBox" HorizontalAlignment="Left" Height="103" Margin="398,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="386" UndoLimit="10000"/>
+        <Label Content="Input Token" HorizontalAlignment="Left" Margin="321,257,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="inputBtn" Content="Input Token" HorizontalAlignment="Left" Margin="709,375,0,0" VerticalAlignment="Top" Width="75" Click="InputBtn_Click"/>
+        <Image x:Name="captchaImg1" HorizontalAlignment="Left" Height="88" Margin="198,10,0,0" VerticalAlignment="Top" Width="195"/>
+        <TextBox x:Name="resultBox1" HorizontalAlignment="Left" Height="23" Margin="198,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="x1" HorizontalAlignment="Left" Height="23" Margin="198,215,0,0" TextWrapping="Wrap" Text="845" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="y1" HorizontalAlignment="Left" Height="23" Margin="198,243,0,0" TextWrapping="Wrap" Text="305" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="testBtn2" Content="Test2" HorizontalAlignment="Left" Margin="10,370,0,0" VerticalAlignment="Top" Width="75" Click="TestBtn2_Click"/>
+        <CheckBox x:Name="usePageID" Content="FromWeb" HorizontalAlignment="Left" Margin="229,273,0,0" VerticalAlignment="Top" Checked="UsePageID_Checked" Unchecked="UsePageID_Unchecked"/>
+        <TextBox x:Name="responseBox" HorizontalAlignment="Left" Height="23" Margin="30,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Response" HorizontalAlignment="Left" Margin="30,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="timeWaitBox" HorizontalAlignment="Left" Height="23" Margin="198,192,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Time wait (s)" HorizontalAlignment="Left" Margin="198,167,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="currentToken" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,375,0,0"/>
 
     </Grid>
 </Window>
